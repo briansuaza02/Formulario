@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <form id="survey-form">
+        <header>
+            <h1 id="title" class="text-center">Deporte Favorito</h1>
+            <p id="description" class="description text-center">
+                Determinar cual es el deporte favorito de las personas
+            </p>
+        </header>
+        <div class="form_group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            
+            <label id="email-label" for="email">Email</label>
+            <input type="email" email="email" id="email" placeholder="Enter your Email" required>
+            
+            <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+            <input type="number" name="age" id="number" min="10" max="99" placeholder="Age">
+            
+            <label for="deporte"> Cual es su deporte favorito?</label>
+            <select id="dropdown" name="dropdown" required>
+                
+                <option value="Futbol">Futbol</option>              
+                <option value="Rugby">Rugby</option>
+                <option value="Baloncesto">Baloncesto</option>
+                <option value="Natacion">Natacion</option>
+            </select>
+            <p>Cual es su nivel en el deporte seleccionado?</p>
+            <label><input name="nivel" value="bajo" type="radio" class="input-radio" checked="">Bajo</label>
+            <label><input name="nivel" value="Medio" type="radio" class="input-radio">Medio</label>
+            <label><input name="nivel" value="Alto" type="radio" class="input-radio">Alto</label>
+
+            <p>Que dias Practica este deporte?</p>
+            <label><input name="lunes" value="lunes" type="checkbox" class="input-checkbox">Lunes</label>
+            <label><input name="Martes" value="Martes" type="checkbox" class="input-checkbox">Martes</label>
+            <label><input name="Miercoles" value="Miercoles" type="checkbox" class="input-checkbox">Miercoles</label>
+            <label><input name="Jueves" value="Jueves" type="checkbox" class="input-checkbox">Jueves</label>
+            <label><input name="Viernes" value="Viernes" type="checkbox" class="input-checkbox">Viernes</label>
+            <label><input name="Sabado" value="Sabado" type="checkbox" class="input-checkbox">Sabado</label>
+            <label><input name="Domingo" value="Domingo" type="checkbox" class="input-checkbox">Domingo</label>
+            <p>Comentarios o sugerencias</p>
+            <textarea id="comments" class="input-textarea" name="comment"
+                placeholder="Ingresar sus comentarios y observaciones"></textarea>
+            <br>
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+            </button>
+
+
+        </div>
+    </form>
+    <script src=https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js></script>
+</body>
+
+</html>

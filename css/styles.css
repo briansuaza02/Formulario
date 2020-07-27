@@ -1,0 +1,69 @@
+html,
+body {
+  /* height: 100%; */
+  width: 100%;
+  margin: 0;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+body {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  
+ 
+}
+form {
+  margin: auto; /* nice thing of auto margin if display:flex; it center both horizontal and vertical :) */
+  width: 60%;
+  color: white;
+}
+header{
+    text-align: center;
+    width: 100%;
+    
+}
+form label{
+width: 100%;
+}
+form input[type=text],
+form input[type=email],
+form input[type=number],
+select{
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+forinput[type=ckeckbox],
+{
+    display: flex;
+    align-items: :start;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    al
+}
+.form_group{
+background-color: rgba(0,0,0,0.5);
+padding: 60px;
+}
+textarea{
+    min-height: 80px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+}
+
+
